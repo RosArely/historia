@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
 <html class="client-js ve-available" lang="es" dir="ltr"><head>
     <meta charset="UTF-8">
     <title>Historia </title>
